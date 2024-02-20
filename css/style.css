@@ -16,7 +16,8 @@
 
 main{
     background-image: url(/img/2109.jpg);
-    height: 100vh;
+    height: calc(100vh - 14vh);
+    background-position: center;
     /* width: 100vw; */
 }
 
