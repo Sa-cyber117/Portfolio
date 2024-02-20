@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-bar {
+    background-color: gray;
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+
+main{
+    background-image: url(/img/2109.jpg);
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+h1{
+    color: rgb(10, 10, 142);
+}
+
+h1 a{
+    text-decoration: none;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar ul li {
+    padding: 5px 12px;
+    position: relative;
+}
+
+.menu-bar ul li a {
+    color: aqua;
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    color: green;
+}
+
+.dropdown {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown    {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(75, 75, 75);
+}
+
+.menu-bar ul li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 2px;
+}
+
+.dropdown2 {
+    display: none;
+}
+
+.dropdown ul li:hover .dropdown2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: rgb(29, 29, 29);
+}
